@@ -1,0 +1,17 @@
+/* trial colors  */
+nav{
+    background-color: yellow;
+}
+header{
+    background-color: red;
+}
+aside{
+    background-color: purple;
+}
+:root{
+    --nav-height: 75px;
+}
+/* nav */
+nav{
+    height: var(--nav-height);
+}
