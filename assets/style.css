@@ -1,15 +1,20 @@
 /* trial colors  */
-nav{
+/* nav{
     background-color: yellow;
-}
+} */
 header{
     background-color: red;
 }
-aside{
+/* aside{
     background-color: purple;
-}
+} */
+/* main{
+    background-color: coral;
+} */
 :root{
     --nav-height: 75px;
+    --aside-width: 65px;
+    --aside-desktop-width: 130px;
 }
 /* nav */
 nav{
@@ -21,4 +26,25 @@ nav{
 .mobile-logo{
     width: 50px;
     height: 50px;
+}
+/* main  */
+aside{
+    height: calc(100vh - var(--nav-height));
+    margin-top: var(--nav-height);
+    width: var(--aside-width);
+    background-image: url(img/sidebar-bg.png);
+    background-size: cover;
+    background-color: #05233d;
+}
+.main-container{
+    padding-left: var(--aside-width);
+    padding-top: var(--nav-height);
+}
+@media screen and (min-width: 768px){
+    aside{
+        width: var(--aside-desktop-width);
+    }
+    .main-container{
+        padding-left: var(--aside-desktop-width);
+    }
 }

@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <nav>
+    <nav class="fixed-top">
         <div class="container-fluid d-flex align-items-center h-100 justify-content-between">
             <div class="navbar-brand">
                 <img src="assets/img/mobile-logo.png" alt="logo" class="d-md-none mobile-logo">
@@ -26,7 +26,8 @@
                     <label class="input-group-text bg-dark-subtle" for="search-bar">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </label>
-                    <input type="text" class="form-control bg-dark-subtle" placeholder="Prova a cercare: Lezioni di Laravel" id="search-bar">
+                    <input type="text" class="form-control bg-dark-subtle"
+                        placeholder="Prova a cercare: Lezioni di Laravel" id="search-bar">
                 </div>
             </form>
             <ul class="navbar-nav d-flex flex-row">
@@ -53,11 +54,42 @@
                         <li><a class="dropdown-item" href="#">Profilo</a></li>
                         <li><a class="dropdown-item" href="#">Fatturazione</a></li>
                         <li><a class="dropdown-item" href="#">Logout</a></li>
-                      </ul>
+                    </ul>
                 </li>
             </ul>
         </div>
     </nav>
+    <main class="d-flex">
+        <aside class="text-white py-3 position-fixed ">
+            <div class="container d-flex flex-column align-items-center h-100">
+                <ul class="list-unstyled d-flex flex-column gap-2">
+                    <li>
+                        <i class="fa-solid fa-house me-md-2"></i>
+                        <span class="d-none d-md-inline">Home</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-chart-simple me-md-2"></i>
+                        <span class="d-none d-md-inline">Stats</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-signal me-md-2"></i>
+                        <span class="d-none d-md-inline">Signals</span>
+                    </li>
+                </ul>
+                <div class="settings mt-auto">
+                    <i class="fa-solid fa-gear me-md-2"></i>
+                    <span class="d-none d-md-inline">Admin</span>
+                </div>
+            </div>
+        </aside>
+        <div class="main-container pd">
+            <header class="bg-primary">
+                <div class="container-fluid">
+                    <h2>Boolean</h2>
+                </div>
+            </header>
+        </div>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
