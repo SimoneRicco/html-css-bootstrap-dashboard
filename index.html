@@ -89,16 +89,18 @@
                         <span class="pe-3">Nuovo studente</span>
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop">
+                            data-bs-target="#staticBackdrop">
                             <i class="fa-solid fa-plus"></i>
                         </button>
                         <!-- Modal -->
-                        <div class="modal fade text-black" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
-                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal fade text-black" id="staticBackdrop" data-bs-backdrop="static"
+                            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                            aria-hidden="true">
                             <div class="modal-dialog mt-0 mb-0 me-0 ms-auto h-100">
                                 <div class="modal-content rounded-0 h-100">
                                     <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Inserisci un nuovo studente</h1>
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Inserisci un nuovo
+                                            studente</h1>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
@@ -106,12 +108,12 @@
                                         <!-- modal body start -->
                                         <form class="row g-3">
                                             <div class="col-md-6">
-                                              <label for="Name" class="form-label">Nome</label>
-                                              <input type="text" class="form-control" id="Name">
+                                                <label for="Name" class="form-label">Nome</label>
+                                                <input type="text" class="form-control" id="Name">
                                             </div>
                                             <div class="col-md-6">
-                                              <label for="surname" class="form-label">Cognome</label>
-                                              <input type="text" class="form-control" id="surname">
+                                                <label for="surname" class="form-label">Cognome</label>
+                                                <input type="text" class="form-control" id="surname">
                                             </div>
                                             <div class="col-6">
                                                 <label for="email1" class="form-label">Email</label>
@@ -136,46 +138,46 @@
                                                 <input type="password" class="form-control" id="pw2">
                                             </div>
                                             <div class="col-12">
-                                              <label for="address" class="form-label">Indirizzo</label>
-                                              <input type="text" class="form-control" id="address">
+                                                <label for="address" class="form-label">Indirizzo</label>
+                                                <input type="text" class="form-control" id="address">
                                             </div>
                                             <div class="col-md-6">
-                                              <label for="inputCity" class="form-label">Città</label>
-                                              <input type="text" class="form-control" id="inputCity">
+                                                <label for="inputCity" class="form-label">Città</label>
+                                                <input type="text" class="form-control" id="inputCity">
                                             </div>
                                             <div class="col-md-4">
-                                              <label for="inputState" class="form-label">Stato</label>
-                                              <select id="inputState" class="form-select">
-                                                <option selected>Scegli...</option>
-                                                <option>Germania</option>
-                                                <option>Francia</option>
-                                                <option>Spagna</option>
-                                                <option>Albania</option>
-                                                <option>Italia</option>
-                                                <option>Albania</option>
-                                              </select>
+                                                <label for="inputState" class="form-label">Stato</label>
+                                                <select id="inputState" class="form-select">
+                                                    <option selected>Scegli...</option>
+                                                    <option>Germania</option>
+                                                    <option>Francia</option>
+                                                    <option>Spagna</option>
+                                                    <option>Albania</option>
+                                                    <option>Italia</option>
+                                                    <option>Albania</option>
+                                                </select>
                                             </div>
                                             <div class="col-md-2">
-                                              <label for="inputZip" class="form-label">Cap</label>
-                                              <input type="text" class="form-control" id="inputZip">
+                                                <label for="inputZip" class="form-label">Cap</label>
+                                                <input type="text" class="form-control" id="inputZip">
                                             </div>
                                             <div class="col-12">
                                                 <label class="form-label" for="inputPhoto">Foto</label>
-                                                <input type="file" class="form-control" id="inputPhoto">                                              
+                                                <input type="file" class="form-control" id="inputPhoto">
                                             </div>
                                             <div class="col-12">
-                                              <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="gridCheck">
-                                                <label class="form-check-label" for="gridCheck">
-                                                  Seleziona per proseguire
-                                                </label>
-                                              </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                    <label class="form-check-label" for="gridCheck">
+                                                        Seleziona per proseguire
+                                                    </label>
+                                                </div>
                                             </div>
                                             <div class="col-12">
-                                              <button type="submit" class="btn btn-primary">Salva</button>
-                                              <button type="reset" class="btn btn-warning">Svuota</button>
+                                                <button type="submit" class="btn btn-primary">Salva</button>
+                                                <button type="reset" class="btn btn-warning">Svuota</button>
                                             </div>
-                                          </form>
+                                        </form>
                                         <!-- modal body end -->
                                     </div>
                                 </div>
@@ -207,8 +209,159 @@
                     </div>
                 </div>
             </header>
-            <div class="contents">
-                
+            <div class="contents pt-4 bg-light">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3>Prossime classi</h3>
+                                </div>
+                                <table class="table text-center next-classes">
+                                    <thead>
+                                        <tr>
+                                            <th>Nome</th>
+                                            <th>Data inizio</th>
+                                            <th>ROI</th>
+                                            <th>Stato</th>
+                                            <th>Azioni</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="class-number">Classe 75</td>
+                                            <td class="class-date">15 Feb 2021</td>
+                                            <td class="class-ROI">20%</td>
+                                            <td class="class-status">
+                                                <span class="badge bg-success">Done</span>
+                                            </td>
+                                            <td class="class-edit">
+                                                <button type="button" class="btn btn-outline-dark">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-outline-dark">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="class-number">Classe 76</td>
+                                            <td class="class-date">16 Feb 2021</td>
+                                            <td class="class-ROI">20%</td>
+                                            <td class="class-status">
+                                                <span class="badge bg-success">Done</span>
+                                            </td>
+                                            <td class="class-edit">
+                                                <button type="button" class="btn btn-outline-dark">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-outline-dark">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="class-number">Classe 77</td>
+                                            <td class="class-date">17 Feb 2021</td>
+                                            <td class="class-ROI">20%</td>
+                                            <td class="class-status">
+                                                <span class="badge bg-warning">Process</span>
+                                            </td>
+                                            <td class="class-edit">
+                                                <button type="button" class="btn btn-outline-dark">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-outline-dark">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="class-number">Classe 78</td>
+                                            <td class="class-date">18 Feb 2021</td>
+                                            <td class="class-ROI">20%</td>
+                                            <td class="class-status">
+                                                <span class="badge bg-success">Done</span>
+                                            </td>
+                                            <td class="class-edit">
+                                                <button type="button" class="btn btn-outline-dark">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-outline-dark">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="class-number">Classe 79</td>
+                                            <td class="class-date">19 Feb 2021</td>
+                                            <td class="class-ROI">20%</td>
+                                            <td class="class-status">
+                                                <span class="badge bg-danger">Failed</span>
+                                            </td>
+                                            <td class="class-edit">
+                                                <button type="button" class="btn btn-outline-dark">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-outline-dark">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="class-number">Classe 80</td>
+                                            <td class="class-date">20 Feb 2021</td>
+                                            <td class="class-ROI">20%</td>
+                                            <td class="class-status">
+                                                <span class="badge bg-success">Done</span>
+                                            </td>
+                                            <td class="class-edit">
+                                                <button type="button" class="btn btn-outline-dark">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-outline-dark">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="class-number">Classe 81</td>
+                                            <td class="class-date">81 Feb 2021</td>
+                                            <td class="class-ROI">20%</td>
+                                            <td class="class-status">
+                                                <span class="badge bg-danger">Failed</span>
+                                            </td>
+                                            <td class="class-edit">
+                                                <button type="button" class="btn btn-outline-dark">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-outline-dark">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="class-number">Classe 82</td>
+                                            <td class="class-date">22 Feb 2021</td>
+                                            <td class="class-ROI">20%</td>
+                                            <td class="class-status">
+                                                <span class="badge bg-success">Done</span>
+                                            </td>
+                                            <td class="class-edit">
+                                                <button type="button" class="btn btn-outline-dark">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-outline-dark">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

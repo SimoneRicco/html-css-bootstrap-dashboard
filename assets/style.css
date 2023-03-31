@@ -47,6 +47,20 @@ aside li:hover, .settings:hover{
     padding-left: var(--aside-width);
     padding-top: var(--nav-height);
 }
+.class-number::before{
+    content: "\f121";
+    font-family: FontAwesome;
+    background-color: rgb(255, 55, 0);
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    color: white;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.next-classes tr:hover{
+    background-color: #F8F8F8;
+}
 @media screen and (min-width: 768px){
     aside{
         width: var(--aside-desktop-width);
