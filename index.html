@@ -62,32 +62,154 @@
     <main class="d-flex">
         <aside class="text-white py-3 position-fixed ">
             <div class="container d-flex flex-column align-items-center h-100">
-                <ul class="list-unstyled d-flex flex-column gap-2">
-                    <li>
+                <ul class="list-unstyled">
+                    <li class="py-2">
                         <i class="fa-solid fa-house me-md-2"></i>
                         <span class="d-none d-md-inline">Home</span>
                     </li>
-                    <li>
+                    <li class="py-2">
                         <i class="fa-solid fa-chart-simple me-md-2"></i>
                         <span class="d-none d-md-inline">Stats</span>
                     </li>
-                    <li>
+                    <li class="py-2">
                         <i class="fa-solid fa-signal me-md-2"></i>
                         <span class="d-none d-md-inline">Signals</span>
                     </li>
                 </ul>
-                <div class="settings mt-auto">
+                <div class="settings mt-auto py-2">
                     <i class="fa-solid fa-gear me-md-2"></i>
                     <span class="d-none d-md-inline">Admin</span>
                 </div>
             </div>
         </aside>
-        <div class="main-container pd">
-            <header class="bg-primary">
-                <div class="container-fluid">
-                    <h2>Boolean</h2>
+        <div class="main-container w-100">
+            <header class="bg-primary text-white pt-3 pb-4">
+                <div class="container-fluid d-flex flex-column flex-md-row justify-content-md-between">
+                    <div class="add-student order-md-1">
+                        <span class="pe-3">Nuovo studente</span>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade text-black" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog mt-0 mb-0 me-0 ms-auto h-100">
+                                <div class="modal-content rounded-0 h-100">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Inserisci un nuovo studente</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- modal body start -->
+                                        <form class="row g-3">
+                                            <div class="col-md-6">
+                                              <label for="Name" class="form-label">Nome</label>
+                                              <input type="text" class="form-control" id="Name">
+                                            </div>
+                                            <div class="col-md-6">
+                                              <label for="surname" class="form-label">Cognome</label>
+                                              <input type="text" class="form-control" id="surname">
+                                            </div>
+                                            <div class="col-6">
+                                                <label for="email1" class="form-label">Email</label>
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                                    <input type="text" id="email1" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <label for="pw1" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="pw1">
+                                            </div>
+                                            <div class="col-6">
+                                                <label for="email2" class="form-label">Indirizzo Email</label>
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                                    <input type="text" id="email2" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <label for="pw2" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="pw2">
+                                            </div>
+                                            <div class="col-12">
+                                              <label for="address" class="form-label">Indirizzo</label>
+                                              <input type="text" class="form-control" id="address">
+                                            </div>
+                                            <div class="col-md-6">
+                                              <label for="inputCity" class="form-label">Città</label>
+                                              <input type="text" class="form-control" id="inputCity">
+                                            </div>
+                                            <div class="col-md-4">
+                                              <label for="inputState" class="form-label">Stato</label>
+                                              <select id="inputState" class="form-select">
+                                                <option selected>Scegli...</option>
+                                                <option>Germania</option>
+                                                <option>Francia</option>
+                                                <option>Spagna</option>
+                                                <option>Albania</option>
+                                                <option>Italia</option>
+                                                <option>Albania</option>
+                                              </select>
+                                            </div>
+                                            <div class="col-md-2">
+                                              <label for="inputZip" class="form-label">Cap</label>
+                                              <input type="text" class="form-control" id="inputZip">
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="form-label" for="inputPhoto">Foto</label>
+                                                <input type="file" class="form-control" id="inputPhoto">                                              
+                                            </div>
+                                            <div class="col-12">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                <label class="form-check-label" for="gridCheck">
+                                                  Seleziona per proseguire
+                                                </label>
+                                              </div>
+                                            </div>
+                                            <div class="col-12">
+                                              <button type="submit" class="btn btn-primary">Salva</button>
+                                              <button type="reset" class="btn btn-warning">Svuota</button>
+                                            </div>
+                                          </form>
+                                        <!-- modal body end -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-3 pt-md-0">
+                        <div class="title-plan d-flex align-items-center">
+                            <h2 class="pe-2">Boolean</h2>
+                            <button class="tag rounded-5 border-0 text-white">Piano blaze</button>
+                        </div>
+                        <div class="app-path">
+                            <button class="tag rounded-5 border-0 text-white">3 app</button>
+                            <i class="fa-solid fa-angles-right"></i>
+                            <button class="tag rounded-5 border-0 text-white d-md-none">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                            <button class="tag rounded-5 border-0 text-white d-none d-md-inline">Boolean mobile
+                                app</button>
+                            <button class="tag rounded-5 border-0 text-white d-none d-md-inline">Boolean web
+                                app</button>
+                            <button class="tag rounded-5 border-0 text-white d-none d-md-inline">Boolean blog
+                                app</button>
+                        </div>
+                    </div>
+                    <div class="online-students pt-3 pt-md-0">
+                        <div>Studenti online negli ultimi 30 minuti</div>
+                        <div class="students-number fs-3">125</div>
+                    </div>
                 </div>
             </header>
+            <div class="contents">
+                
+            </div>
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
